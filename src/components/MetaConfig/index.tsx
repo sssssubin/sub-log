@@ -3,6 +3,7 @@ import Head from "next/head"
 
 export type MetaConfigProps = {
   title: string
+  googleSearchConsole?: string
   description: string
   type: "Website" | "Post" | "Page" | string
   date?: string
@@ -15,6 +16,10 @@ const MetaConfig: React.FC<MetaConfigProps> = (props) => {
     <Head>
       <title>{props.title}</title>
       <meta name="robots" content="follow, index" />
+      <meta
+        name="google-site-verification"
+        content={props.googleSearchConsole}
+      />
       <meta charSet="UTF-8" />
       <meta name="description" content={props.description} />
       {/* og */}
