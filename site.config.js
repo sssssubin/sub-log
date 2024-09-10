@@ -44,7 +44,9 @@ const CONFIG = {
   googleSearchConsole: {
     enable: false,
     config: {
-      siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+      siteVerification:
+        process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+        "SFsS8BJiv8ljY1JlBQ_k55q-BnGvmk8VdvptzP_Ui8k",
     },
   },
   naverSearchAdvisor: {
@@ -56,7 +58,8 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "sssssubin/comments-repo",
+      repo:
+        process.env.NEXT_PUBLIC_UTTERANCES_REPO || "sssssubin/comments-repo",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
